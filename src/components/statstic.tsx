@@ -43,6 +43,8 @@ const Statstic = () => {
 						className='object-cover object-center w-full h-full'
 						src='https://dummyimage.com/600x300'
 						alt='stats'
+						width={600}
+						height={300}
 					/>
 				</div>
 			</div>

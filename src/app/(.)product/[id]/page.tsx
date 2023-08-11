@@ -101,16 +101,16 @@ const ProductDetailPage = () => {
 												{product?.description}
 											</p>
 										</div>
-										<div className=' space-y-3 text-sm'>
+										<div className='space-y-3 text-sm'>
 											<button
 												onClick={handleClick}
-												className='button w-full bg-transparent border-blue-600 hover:bg-blue-600 hover:text-white hover:border-transparent'
+												className='h-10 button w-full bg-blue-50  border-blue-600 hover:bg-blue-600 hover:text-white hover:border-transparent'
 											>
 												Add to bag
 											</button>
 											<button
 												onClick={() => window.location.reload()}
-												className='button w-full bg-transparent border-blue-600 hover:bg-blue-600 hover:text-white hover:border-transparent'
+												className='h-10 button w-full bg-blue-100 border-blue-600 hover:bg-blue-600 hover:text-white hover:border-transparent'
 											>
 												View full details
 											</button>

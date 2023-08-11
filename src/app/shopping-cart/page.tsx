@@ -9,8 +9,12 @@ import { useEffect, useState } from 'react';
 
 const ShoppingCart = () => {
 	const [total, setTotal] = useState(0);
+	const localStore =
+		typeof window !== 'undefined'
+			? window.localStorage.getItem('carts')
+			: false;
 	const [products, setProducts] = useState<ProductType[]>(
-		JSON.parse(localStorage.getItem('carts') as string) || []
+		JSON.parse(localStore as string) || []
 	);
 
 	const removeProduct = (id: number) => {
